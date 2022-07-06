@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: var(--color-grey-light-1);
+  background-color: white;
   font-size: 1.5rem;
   color: var(--color-grey-dark-2);
   font-family: "Open Sans", "Lucida Grande", tahoma, verdana, arial, sans-serif;
