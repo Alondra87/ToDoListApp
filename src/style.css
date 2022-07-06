@@ -1,8 +1,8 @@
 /* Variables */
 :root {
   /* Color Palette */
-  --color-mint: #56cc9d;
-  --color-clear: #f3969a;
+  --color-mint: #888;
+  --color-clear: #888;
   --color-grey-light-1: #eceeef;
   --color-grey-dark-1: #888;
   --color-grey-dark-2: #343a40;
@@ -17,7 +17,6 @@
 }
 
 /* Base Styles */
-
 html {
   font-size: 62.5%;
 }
@@ -42,110 +41,51 @@ button {
   cursor: pointer;
 }
 
-/* Main Styles */
-
+/* Main Content Component  */
 h1 {
-  color: var(--color-grey-dark-2);
-  margin: 3rem;
-  padding-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  padding: 5rem;
 }
 
-section {
-  width: 100%;
+.container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 50rem;
+  height: 5rem;
+  padding: 1rem;
 }
 
 ::placeholder {
   color: var(--color-mint);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-style: italic;
 }
 
-.todoList {
-  box-shadow: var(--color-grey-dark-2) 2px 2px 5px;
-  width: 60rem;
-  font-size: 2rem;
-  text-align: left;
-  padding: 3rem;
-  background-color: #fff;
-}
-
-.todoList div {
+.list {
+  background-color: white;
   width: 50rem;
-  border-bottom: 1px solid var(--color-grey-light-1);
-  padding: 8px;
+  height: 5rem;
+  max-height: 300px;
+  box-shadow: var(--color-grey-dark-2) 2px 2px 5px;
+  padding: 1rem;
 }
 
-input {
-  border: none;
-  padding: 15px;
-  font-style: italic;
-  font-size: 18px;
-  outline: none;
+#othertask {
+  margin: 1rem;
 }
 
-.input-done {
-  background-color: var(--color-grey-light-1);
-}
-
-#clear {
-  text-align: center;
-  margin: 0;
-  padding: 2rem;
+.clear {
+  width: 50rem;
+  height: 5rem;
+  box-shadow: var(--color-grey-dark-2) 2px 2px 5px;
   border: none;
   background-color: var(--color-clear);
   color: var(--color-grey-light-1);
-  font-size: 2rem;
-  width: 60rem;
-  box-shadow: var(--color-grey-dark-2) 2px 2px 5px;
-}
-
-#clear:hover {
-  cursor: pointer;
-}
-
-i {
-  float: right;
-}
-
-#header {
-  font-weight: bold;
-  padding: 2rem;
-}
-
-.fa-trash-alt {
-  display: none;
-  padding: 15px;
-}
-
-.trash {
-  display: block;
-}
-
-.fa-ellipsis-v {
-  padding: 15px;
-}
-
-.done-task {
-  text-decoration: line-through;
-  background-color: var(--color-grey-light-1);
-  width: 50%;
-}
-
-.edit-task {
-  animation-name: edited;
-  animation-duration: 1.5s;
-}
-
-@keyframes edited {
-  0% {
-    background-color: var(--color-grey-dark-1);
-  }
-}
-
-.newbackg {
-  background-color: var(--color-grey-light-1);
+  font-size: 1.5rem;
 }
