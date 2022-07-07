@@ -55,6 +55,8 @@ run: npx stylelint "\*_/_.{css,scss}"
 
 ### Deployment
 
+https://alondra87.github.io/ToDoListApp/dist/
+
 ## Authors
 
 👤 **Andrea Alvarez**
