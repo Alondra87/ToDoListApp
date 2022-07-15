@@ -10,7 +10,6 @@ const add = (textInputValue) => {
   };
   const addedItem = TaskItem;
   myTasks().push(addedItem);
-  // saveDataLocally(myTasks());
   return myTasks();
 };
 const clearDiv = (div) => {
@@ -26,7 +25,6 @@ const changeInput = (element) => {
   const newDescription = element.value;
   const elementIndex = element.getAttribute('index');
   myTasks()[elementIndex - 1].description = newDescription;
-  // saveDataLocally(myTasks());
 };
 module.exports = {
   add, myTasks, removeItemAt, clearDiv, changeInput,
