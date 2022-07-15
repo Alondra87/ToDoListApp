@@ -1,4 +1,4 @@
-const { add, myTasks, removeItemAt } = require('./addRemove.js');
+const { add, myTasks, removeItemAt } = require('./AddRemove.js');
 
 describe('myTasks', () => {
   test('add test', () => {
