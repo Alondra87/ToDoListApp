@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-cycle
 const tasks = [];
 function myTasks() {
   return tasks;
