@@ -4,7 +4,7 @@
   "description": "In this project, I build a simple HTML list of To Do tasks, using webpack to bundle JavaScript and applying ES6 syntax.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "webpack serve --open",
     "build": "webpack"
   },
